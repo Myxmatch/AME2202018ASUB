@@ -1,0 +1,53 @@
+#slideShowContainer {
+    height: 100vh;
+    background-size:cover;
+    background-position: center center;
+    transition: all ease 0.2s;
+    overflow: hidden;
+}
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+.slide {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    display: none;
+    transition: all ease 0.2s;
+    position: absolute;
+    top: 0;
+}
+.imagePreload {
+    background: url('https://s3-us-west-1.amazonaws.com/flurred/dd2.jpg') no-repeat -9999px -9999px,
+    url('https://s3-us-west-1.amazonaws.com/flurred/dd3.jpg') no-repeat -9999px -9999px,
+    url('https://s3-us-west-1.amazonaws.com/flurred/dd12.jpg') no-repeat -9999px -9999px,
+    url('https://s3-us-west-1.amazonaws.com/flurred/dd16.jpg') no-repeat -9999px -9999px,
+    url('https://s3-us-west-1.amazonaws.com/flurred/dd17.jpg') no-repeat -9999px -9999px,
+    url('https://s3-us-west-1.amazonaws.com/flurred/dd18.jpg') no-repeat -9999px -9999px,
+    url('https://s3-us-west-1.amazonaws.com/flurred/dd19.jpg') no-repeat -9999px -9999px;
+}
+#arrowContainer {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+}
+#prevArrow {
+    margin-right: 20px;
+}
+#prevArrow i, #nextArrow i {
+    font-size: 36px;
+    color: #ffffff;
+}
+#prevArrow:hover, #nextArrow:hover {
+    text-decoration: none;
+}
+#paginationContainer {
+    position: absolute;
+    bottom: 35px;
+    right: 46%;
+}
+#paginationContainer i{
+    color: #ffffff;
+}
